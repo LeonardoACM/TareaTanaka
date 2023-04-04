@@ -28,25 +28,29 @@ namespace Sistema_de_inv_y_compra_de_armas
                 {
                     case "1":
 
-                        Console.WriteLine("Seleccion de compra");
+                        Console.WriteLine("Tiendita");
+                        Console.WriteLine("---------");
                         Console.WriteLine("Armas");
+                        Console.WriteLine("=====");
                         Console.WriteLine("1) Pistola");
                         Console.WriteLine("2) Arco");
                         Console.WriteLine("3) Espada");
+                        Console.WriteLine("=====");
                         Console.WriteLine("Municiones");
+                        Console.WriteLine("=====");
                         Console.WriteLine("4) Balas");
                         Console.WriteLine("5) Flechas");
 
                         seleccionar = Console.ReadLine();
                         Console.Clear();
 
-                        bala bala = new bala("bala", 10, 5);
-                        flecha flech = new flecha("flecha", 15, 4);
+                        bala bala = new bala("bala ", 5, 50);
+                        flecha flech = new flecha("flecha ", 10, 20);
 
                         switch(seleccionar)
                         {
                             case "1":
-                                pistola pistol = new pistola("Pistola", 5, 1f, 100, bala.daño);
+                                pistola pistol = new pistola("Pistola ", 5, 1f, 300, bala.daño);
                                 pistol.data();
                                 inv.Add(pistol);
                                 Console.ReadLine();
@@ -55,7 +59,7 @@ namespace Sistema_de_inv_y_compra_de_armas
 
                             case "2":
 
-                                arco arc = new arco("Arco", 10, 1.5f, 200, flech.daño);
+                                arco arc = new arco("Arco ", 10, 1.5f, 80, flech.daño);
                                 arc.data();
                                 inv.Add(arc);
                                 Console.ReadLine();
@@ -64,7 +68,7 @@ namespace Sistema_de_inv_y_compra_de_armas
 
                             case "3":
 
-                                espada spada = new espada("Espada", 50, 0.5f, 20);
+                                espada spada = new espada("Espada ", 2, 0.5f, 100);
                                 spada.data();
                                 inv.Add(spada);
                                 Console.ReadLine();
@@ -88,7 +92,7 @@ namespace Sistema_de_inv_y_compra_de_armas
                                 break;
 
                             default:
-                                Console.WriteLine("no hay nada");
+                                Console.WriteLine(" No hay nada ");
                                 Console.ReadLine();
                                 Console.Clear();
 
@@ -108,8 +112,8 @@ namespace Sistema_de_inv_y_compra_de_armas
                             }
 
 
-                            Console.WriteLine("1) eliminar objeto ");
-                            Console.WriteLine("2) regresar ");
+                            Console.WriteLine("1) Eliminar objeto ");
+                            Console.WriteLine("2) back ");
                             seleccionar = Console.ReadLine();
                             Console.Clear();
 
@@ -140,7 +144,7 @@ namespace Sistema_de_inv_y_compra_de_armas
                         }
                         else
                         {
-                            Console.WriteLine("no hay nada");
+                            Console.WriteLine(" no hay nada ");
                             Console.ReadLine();
                             Console.Clear();
                         }

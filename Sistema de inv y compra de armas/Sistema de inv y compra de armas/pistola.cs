@@ -28,13 +28,13 @@ namespace Sistema_de_inv_y_compra_de_armas
         public override void data()
         {
             Console.WriteLine("Nombre " + nombre);
-            Console.WriteLine("Daño" + daño);
-            Console.WriteLine("Velocidad de ataque" + va);
-            Console.WriteLine("Precio" + precio);
+            Console.WriteLine("Daño " + daño);
+            Console.WriteLine("Velocidad de ataque " + va);
+            Console.WriteLine("Precio " + precio);
 
             int a = Convert.ToInt32((daño + dañobala) / va);      //float a int.   
 
-            Console.WriteLine("Daño x segundo" + a);
+            Console.WriteLine("Daño x segundo " + a);
             Console.WriteLine("Municion necesaria: flechas");
         }
     }

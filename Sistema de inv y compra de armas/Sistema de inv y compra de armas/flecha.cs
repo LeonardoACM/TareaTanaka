@@ -20,9 +20,9 @@ namespace Sistema_de_inv_y_compra_de_armas
         }
         public override void data()
         {
-            Console.WriteLine("Nombre" + nombre);
-            Console.WriteLine("Daño" + daño);
-            Console.WriteLine("Precio" + precio);
+            Console.WriteLine("Nombre " + nombre);
+            Console.WriteLine("Daño " + daño);
+            Console.WriteLine("Precio " + precio);
         }
     }
 }
