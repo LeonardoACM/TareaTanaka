@@ -35,7 +35,8 @@ namespace Sistema_de_inv_y_compra_de_armas
             int a = Convert.ToInt32((daño + dañobala) / va);      //float a int.   
 
             Console.WriteLine("Daño x segundo " + a);
-            Console.WriteLine("Municion necesaria: flechas");
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("Municion que necesita: balas");
         }
     }
 }

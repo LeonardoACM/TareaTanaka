@@ -31,6 +31,8 @@ namespace Sistema_de_inv_y_compra_de_armas
             int eldaño = Convert.ToInt32(daño / va);      //float a int.   
 
             Console.WriteLine("Daño x segundo " + eldaño);
+            Console.WriteLine("-----------------------------");
+            //Console.WriteLine("No requiere municion, porque es un arma cuerpo a cuerpo");
         }
     }
 }

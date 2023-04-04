@@ -112,8 +112,8 @@ namespace Sistema_de_inv_y_compra_de_armas
                             }
 
 
-                            Console.WriteLine("1) Eliminar objeto ");
-                            Console.WriteLine("2) back ");
+                            Console.WriteLine("1) Eliminar item ");
+                            Console.WriteLine("2) Back ");
                             seleccionar = Console.ReadLine();
                             Console.Clear();
 
@@ -123,13 +123,16 @@ namespace Sistema_de_inv_y_compra_de_armas
 
                                     for (int i = 0; i < inv.Count; i++)
                                     {
-
-                                        Console.WriteLine(i + "" + inv[i].GetType().Name);
+                                        Console.WriteLine("Escriba el numero al costado del item para eliminar el objeto");
+                                        Console.WriteLine("-----------------");
+                                        Console.WriteLine(" ");
+                                        Console.WriteLine(i + "] " + inv[i].GetType().Name);
+                                        
                                     }
 
                                     int a = int.Parse(Console.ReadLine()); //convierte de texto a entero
 
-                                    inv.Remove(inv[a]);
+                                    inv.Remove(inv[a]); //elimina objeto
 
                                     Console.Clear();
 
@@ -144,7 +147,7 @@ namespace Sistema_de_inv_y_compra_de_armas
                         }
                         else
                         {
-                            Console.WriteLine(" no hay nada ");
+                            Console.WriteLine(" No hay nada ");
                             Console.ReadLine();
                             Console.Clear();
                         }
@@ -152,7 +155,7 @@ namespace Sistema_de_inv_y_compra_de_armas
                         break;
 
                     case "3":
-                        continuidad = false;
+                        continuidad = false; //cerrar programa
                         break;
                 }
             }
