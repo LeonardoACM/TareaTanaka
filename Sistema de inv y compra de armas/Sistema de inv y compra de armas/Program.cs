@@ -121,13 +121,12 @@ namespace Sistema_de_inv_y_compra_de_armas
                             {
                                 case "1":
 
+                                    Console.WriteLine("Escriba el numero al costado del item para eliminar el objeto");
+                                    Console.WriteLine("-----------------");
+                                    Console.WriteLine(" ");
                                     for (int i = 0; i < inv.Count; i++)
                                     {
-                                        Console.WriteLine("Escriba el numero al costado del item para eliminar el objeto");
-                                        Console.WriteLine("-----------------");
-                                        Console.WriteLine(" ");
                                         Console.WriteLine(i + "] " + inv[i].GetType().Name);
-                                        
                                     }
 
                                     int a = int.Parse(Console.ReadLine()); //convierte de texto a entero
